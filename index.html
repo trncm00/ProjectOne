@@ -1,140 +1,137 @@
-    <!DOCTYPE html>
-    <html>
-
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>about</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+           <link rel="stylesheet" href="style.css">
+       
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap');
+            
+        
+            /*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 10px;
+	margin: 0px;
+}
 
-      
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2.0%;
+}
+.col:first-child { margin-left: 0; }
 
-            /*
-            #gal {
-               display:flex;
-                      justify-content: center;
-                align-items: center;
-            }
-*/
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
 
-            section {
-                position: relative;
-                display: flex;
-                flex-wrap: wrap;
-                /*                        max-width:950px;*/
-                margin: 60px auto;
-                box-shadow: 10px 10px 8px rgba(0, 0, 0, .5);
-                text-shadow: 10px 10px 8px rgba(0, 0, 0, .5);
+            /*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.6%;
+}
+.span_3_of_5 {
+	width: 59.2%;
+}
+.span_2_of_5 {
+	width: 38.8%;
+}
+.span_1_of_5 {
+	width: 18.4%;
+}
 
 
-            }
-
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+            
             img {
-                padding: 10px;
-                border: 10px rgba(0, 0, 0, .75);
-            }
-
-            img:hover {
-                /*                border: solid gray 5px;*/
-                transform: scale(1.5);
-                transition: 3.0s;
-                z-index: 4;
-                
-
-            }
-
+    max-width: 100%;
+    height: auto;
+}
+            
         </style>
 
+
+        <title>home</title>
     </head>
-
-    <body style="background-color: #c4a287;">
-
-        <!--   nav     -->
-
+    <body>
+        
+<!--    navigation    -->
+   
+            <header>
         <div>
-            <div>
-                <header>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                           <li><p class='goodbye ' style="font-size:25px; " >Terence Minerbrook's Website</p></li>
-                        </ul>
-                    </nav>
+        <ul>
+        <li>
+        <a href="index.html">Home</a>
+        </li></ul></div>
+    <div><ul><li>
+        <a href="about.html">About</a>
+        </li></ul></div>
+    <div><ul><li>
+        <a href="contact.html">Contact</a>
+        </li>
+        </ul>
+            </div>
                 </header>
-            </div>
-        </div>
-
         
         
         
-<!--        -->
-<!--        -->
+        
+        <h1>Home</h1>
+<div class="section group">
+	<div class="col span_2_of_5">
     
-
-        <!--   hero     -->
-        <div id="hero">
-
-            <div class="greet wthrquart">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra.
-
-                </p>
-
-            </div>
-        </div>
-        <!--Gallery-->
-        <div class="sec">
-            <div id="gal">
-                <section>
-
-                    <img src="images/art/diogenes.jpg" class="wquart">
-
-                    <img src="images/art/goya.jpg" class="wquart">
-
-                    <img src="images/art/history.jpg" class="wquart">
-
-                    <img src="images/art/rembgoth.jpg" class="wquart">
-
-                    <img src="images/art/venice.jpg" class="wquart">
-
-                    <img src="images/art/netsuke.jpg" class="wquart">
-
-                    <img src="images/art/magritte.jpg" class="wquart">
-
-                    <img src="images/art/vision.jpg" class="wquart">
-
-                </section>
-            </div>
-        </div>
-
-<!--footer-->
-       <footer>
-        <div id="villain">
-
-            <div class="goodbye whalf">
-                <p>
-
-
-                  <i>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada...
-                      </i>
-
-                </p>
-
-            </div>
-        </div>
-</footer>
-   
+	1 of 5
+        
+       
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada nec. Donec quis luctus est. Nam dapibus, lacus a porttitor dapibus, sapien dolor egestas augue, vitae imperdiet nulla arcu ut dui. Nam in maximus neque. In in interdum leo. Aliquam erat volutpat. Integer bibendum euismod mauris, nec fermentum nunc iaculis quis. Nunc in tincidunt ante. Pellentesque eget suscipit massa. Curabitur rutrum augue nec turpis congue pellentesque. Etiam mattis tempor gravida.
+        
+        Nam mollis vel ipsum ut viverra. Donec eu augue auctor, vulputate magna id, vulputate mi. Donec id efficitur lectus. Nullam cursus odio a tincidunt bibendum. In vitae placerat tortor. Aliquam cursus, nulla non dictum lobortis, augue ipsum tristique justo, ac fermentum massa nisi sed libero. Cras sollicitudin lectus luctus, vehicula enim eget, tempus sapien. Fusce rutrum massa consequat hendrerit pulvinar. Nullam gravida semper diam, in auctor quam gravida in. Proin placerat, odio auctor fermentum pretium, purus arcu pellentesque velit, id mattis orci ipsum sit amet nisi. Suspendisse interdum massa in libero pulvinar, at hendrerit ex maximus.
+        
+        Donec auctor, eros a efficitur euismod, mauris lectus sodales leo, sit amet convallis dolor orci eget sem. Phasellus at mauris eros. Quisque vestibulum quam eu enim viverra rhoncus. Mauris suscipit ligula mauris, vel accumsan tortor porttitor in. Curabitur lacinia vehicula lectus, et suscipit mauris venenatis volutpat. Quisque nec eleifend ante, sit amet mollis sem. Vivamus at leo non dui posuere laoreet. Etiam accumsan dolor vitae porttitor sagittis. Sed euismod ligula felis. Donec eu odio sit amet massa pharetra aliquet. Aenean scelerisque, erat nec tincidunt consectetur, metus enim hendrerit urna, eget dapibus arcu sapien cursus mi. Fusce faucibus diam lacus, at euismod ex euismod ut. Nulla viverra diam a tempus ullamcorper. Quisque ultrices congue augue. In sit amet turpis arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        
+        Morbi blandit risus sit amet enim dictum posuere. Nulla et magna eu est aliquet porta et id lacus. Proin libero purus, viverra in laoreet quis, interdum vel metus. Donec gravida lorem ullamcorper nunc tempus, eu imperdiet lacus pharetra. Nulla augue sem, porta at finibus at, auctor ac ligula. Aenean finibus felis sit amet velit rhoncus condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam sodales augue et dolor auctor semper. Nullam tellus turpis, aliquam scelerisque fringilla in, volutpat et quam.
+        
+        Vivamus quis consequat ligula. Cras quis velit ac magna convallis pharetra. Vestibulum elementum gravida tortor eleifend vulputate. Sed luctus vehicula lectus, finibus auctor lectus congue in. Aenean quis eros sed sem viverra dictum id quis arcu. Fusce vestibulum, nisi at venenatis vehicula, tellus leo porttitor ipsum, id imperdiet elit enim eu quam. Cras tincidunt iaculis lacus commodo scelerisque. Nam ut mauris eu eros interdum tempor. Aliquam erat volutpat. In vehicula eu arcu vulputate consectetur. Praesent ipsum leo, euismod in risus non, semper rutrum justo. 
+	</div>
+	<div class="col span_3_of_5">
+        <img  src="images/art/goya.jpg">
+        
+        1 of 5
+        
+	</div>
+<!--
+	<div class="col span_1_of_5">
+	1 of 5
+	</div>
+	<div class="col span_1_of_5">
+	1 of 5
+	</div>
+	<div class="col span_1_of_5">
+	1 of 5
+	</div>
+-->
+</div>
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-
-    </html>
-   
-
-
-
-
-
+</html>

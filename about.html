@@ -1,172 +1,175 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html>
-    <html>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*  SECTIONS  */
+        .section {
+            clear: both;
+            padding: 0px;
+            margin: 0px;
+        }
 
-        <meta charset="UTF-8">
-        <title>home</title>
+        /*  COLUMN SETUP  */
+        .col {
+            display: block;
+            float: left;
+            margin: 1% 0 1% 2.0%;
+        }
 
-        <link rel="stylesheet" href="style.css">
+        .col:first-child {
+            margin-left: 0;
+        }
 
-        <style>
-            
-           
-@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap');
+        /*  GROUPING  */
+        .group:before,
+        .group:after {
+            content: "";
+            display: table;
+        }
 
-            img {
-                max-width: 100%;
-                width:auto;
-             
-                
-                
-                    }
+        .group:after {
+            clear: both;
+        }
 
-         
-            h1{
-                font-family:'Lobster',sans-serif;
+        .group {
+            zoom: 1;
+            /* For IE 6/7 */
+        }
+
+        /*  GRID OF EIGHT  */
+        .span_8_of_8 {
+            width: 100%;
+        }
+
+        .span_7_of_8 {
+            width: 87.25%;
+        }
+
+        .span_6_of_8 {
+            width: 74.5%;
+        }
+
+        .span_5_of_8 {
+            width: 61.75%;
+        }
+
+        .span_4_of_8 {
+            width: 49%;
+        }
+
+        .span_3_of_8 {
+            width: 36.25%;
+        }
+
+        .span_2_of_8 {
+            width: 23.5%;
+        }
+
+        .span_1_of_8 {
+            width: 10.75%;
+        }
+
+        /*  GO FULL WIDTH BELOW 480 PIXELS */
+        @media only screen and (max-width: 480px) {
+            .col {
+                margin: 1% 0 1% 0%;
             }
-            
-            main{
-                display:grid;
-                grid-template-columns: auto 900px auto;
-                grid-gap:10px;}
-            
-            @media screen and (max-width:1200px){
-                main, .container{display:block;}
+
+            .span_1_of_8,
+            .span_2_of_8,
+            .span_3_of_8,
+            .span_4_of_8,
+            .span_5_of_8,
+            .span_6_of_8,
+            .span_7_of_8,
+            .span_8_of_8 {
+                width: 100%;
             }
-        </style>
+        }
 
-    </head>
+    </style>
 
-    <body style="background-color: #c4a287;">
-    
-        <!--   nav     -->
-    
+    <title>Hello, world!</title>
+</head>
+
+<header>
+    <div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<body>
+    <h1>Terence Minerbrook</h1>
+    <div class="section group">
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+        <div class="col span_1_of_8">
+            1 of 8
+        </div>
+    </div>
+
+
+    <footer>
         <div>
-            <div>
-                <header>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                           <li><p class='goodbye ' style="font-size:25px; " >Terence Minerbrook's Website</p></li>
-                        </ul>
-                    </nav>
-                </header>
+            <div class="col span_8_of_8">
+                1 of 8
             </div>
         </div>
 
-        
-        
-                <!--   hero     -->
-        <div id="hero">
+    </footer>
 
-            <div class="greet wthrquart">
-                <p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra.
-
-                </p>
-
-            </div>
-        </div>
-        <main>
-            
-          <div class="container">
-              
-            <div class="coll">
-
-        <img src="images/art/vision.jpg">
-              </div>
-              
-              <div class="colr blockTxt">
-                    <h1><center>Heading One</center></h1>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada nec. Donec quis luctus est. Nam dapibus, lacus a porttitor dapibus, sapien dolor egestas augue, vitae imperdiet nulla arcu ut dui. Nam in maximus neque. In in interdum leo. Aliquam erat volutpat. Integer bibendum euismod mauris, nec fermentum nunc iaculis quis. Nunc in tincidunt ante. Pellentesque eget suscipit massa. Curabitur rutrum augue nec turpis congue pellentesque. Etiam mattis tempor gravida
-              </div>
-            </div>
-            
-                      <div class="container">
-              
-            <div class="colr">
-
-        <img src="images/art/vision.jpg">
-              </div>
-              
-              <div class="coll blockTxt">
-                    <h1><center>Heading Two</center></h1>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada nec. Donec quis luctus est. Nam dapibus, lacus a porttitor dapibus, sapien dolor egestas augue, vitae imperdiet nulla arcu ut dui. Nam in maximus neque. In in interdum leo. Aliquam erat volutpat. Integer bibendum euismod mauris, nec fermentum nunc iaculis quis. Nunc in tincidunt ante. Pellentesque eget suscipit massa. Curabitur rutrum augue nec turpis congue pellentesque. Etiam mattis tempor gravida
-              </div>
-            </div>
-            
-                      <div class="container">
-              
-            <div class="coll">
-
-        <img src="images/art/vision.jpg">
-              </div>
-              
-              <div class="colr blockTxt">
-                    <h1><center>Heading Three</center></h1>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada nec. Donec quis luctus est. Nam dapibus, lacus a porttitor dapibus, sapien dolor egestas augue, vitae imperdiet nulla arcu ut dui. Nam in maximus neque. In in interdum leo. Aliquam erat volutpat. Integer bibendum euismod mauris, nec fermentum nunc iaculis quis. Nunc in tincidunt ante. Pellentesque eget suscipit massa. Curabitur rutrum augue nec turpis congue pellentesque. Etiam mattis tempor gravida
-              </div>
-            </div>
-                      <div class="container">
-              
-            <div class="colr">
-
-        <img src="images/art/vision.jpg">
-              </div>
-              
-              <div class="coll blockTxt">
-                    <h1><center>Heading Four</center></h1>
-                    <p >
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada nec. Donec quis luctus est. Nam dapibus, lacus a porttitor dapibus, sapien dolor egestas augue, vitae imperdiet nulla arcu ut dui. Nam in maximus neque. In in interdum leo. Aliquam erat volutpat. Integer bibendum euismod mauris, nec fermentum nunc iaculis quis. Nunc in tincidunt ante. Pellentesque eget suscipit massa. Curabitur rutrum augue nec turpis congue pellentesque. Etiam mattis tempor gravida
-              </div>
-            </div>
-            
-        
-            
-             
-            
-            
-        </main>
-        
-        
-        
-
-
-
-        <!--      footer      -->
-      
-                <footer>
-                    
-                    
-        <div id="villain">
-
-            <div class="goodbye whalf">
-                <p>
-
-
-                  <i>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eget mi vel pharetra. Nam feugiat justo urna, in tristique erat malesuada...
-                      </i>
-
-                </p>
-
-            </div>
-        </div>
-</footer>
-                    
-                    
-                    
-         
-
-    </body>
-
-    </html>
+</html>
