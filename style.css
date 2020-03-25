@@ -41,9 +41,7 @@ body {
 }
 
 
-nav {
-    background-color:
-}
+
 
 header {
     display: flex;
@@ -65,10 +63,23 @@ a {
 ul > li {
     list-style: none;
     display: inline-block;
-    background: rgba(255, 22, 84, .5);
-    padding: 2px;
+    background: rgba(36, 123, 160, .50);
+    padding: 10px 10px;
     /*    margin-left:20px; */
     margin: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px .5px 0px rgba(36, 123, 160, .25);
+    text-shadow: 4px 4px 1px rgba(36, 123, 160, .25);
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(243, 255, 189, .75);
+}
+
+ul>li:hover{
+    background: rgba(36, 123, 160, .35);
 }
 
 header > div:nth-child(3) {
@@ -76,13 +87,22 @@ header > div:nth-child(3) {
     margin-left: auto;
 }
 
+a[href*="index.html"] {
+    margin-left: auto;
+}
+
+a[href*="about.html"] {
+    margin-right: auto;
+}
 
 
 /*this helps me layout the pagess*/
 
+/*
 div {
     border: 5px dashed black;
 }
+*/
 
 /*
 .image {
@@ -99,3 +119,20 @@ form > label {
 footer div {
     background-color: rgba(36, 123, 160, .5);
 }
+
+/* my classes*/
+.conabout {
+    padding: 5px;
+    /*   margin:20px;*/
+    border-style: dashed;
+
+}
+
+.fltr{
+    float:right;
+}
+
+.fltl{
+    float:left;
+}
+
